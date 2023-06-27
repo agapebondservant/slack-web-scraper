@@ -1,0 +1,9 @@
+node_modules/*
+.env
+cookies/
+exampleData/
+slack-data/
+*.0-newline-encoded-pre-elements.html
+*.1-filter-unexpected-elements.html
+*.2-group-by-date.json
+*.3-parsed-posts.json
