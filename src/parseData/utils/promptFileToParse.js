@@ -54,3 +54,4 @@ async function getFile() {
 }
 
 exports.promptFileToParse = promptFileToParse
+exports.getFile = getFile
