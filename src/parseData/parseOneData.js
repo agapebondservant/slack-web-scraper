@@ -8,7 +8,7 @@ const { filterHTMLByValidElement } = require('./utils/filterHTMLByValidElement')
 const { groupByDate } = require('./utils/groupByDate')
 const { parsePostsToJson } = require('./utils/parsePostsToJson')
 
-promptFileToParse().then(filePath => {
+getFile().then(filePath => {
   // prettier-ignore
   const {
     readFile,
