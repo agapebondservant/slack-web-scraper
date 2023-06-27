@@ -3,9 +3,9 @@ const inquirer = require('inquirer')
 
 const SLACK_DATA_FOLDER_PATH = 'slack-data/'
 
-async function promptFileToParse() {
-  const defaultFilePaths = await getDefaultFilePaths()
-  const { filePath } = await prompt(defaultFilePaths)
+async function getFileToParse() {
+  const filePaths = await getDefaultFilePaths()
+  const { filePath } = await filePaths[filePaths.length - 1]
   return filePath
 }
 
@@ -47,4 +47,4 @@ async function validateFilePath(filePath) {
   }
 }
 
-exports.promptFileToParse = promptFileToParse
+exports.getFileToParse = getFileToParse

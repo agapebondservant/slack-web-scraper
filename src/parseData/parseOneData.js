@@ -1,6 +1,6 @@
 require('dotenv').config()
 
-const { promptFileToParse } = require('./utils/promptFileToParse')
+const { getFileToParse } = require('./utils/getFileToParse')
 const { FileUtils } = require('./utils/FileUtils')
 const { pipe } = require('./utils/pipe')
 const { encodeNewlinePreElements } = require('./utils/encodeNewlinePreElements')
@@ -8,7 +8,7 @@ const { filterHTMLByValidElement } = require('./utils/filterHTMLByValidElement')
 const { groupByDate } = require('./utils/groupByDate')
 const { parsePostsToJson } = require('./utils/parsePostsToJson')
 
-promptFileToParse().then(filePath => {
+getFileToParse().then(filePath => {
   // prettier-ignore
   const {
     readFile,
