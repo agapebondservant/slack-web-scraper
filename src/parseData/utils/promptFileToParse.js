@@ -47,7 +47,7 @@ async function validateFilePath(filePath) {
   }
 }
 
-async function getFile(defaultFilePaths) {
+async function getFile() {
   const singleFilePaths = await getDefaultFilePaths()
   const { singleFilePath } = await singleFilePaths[singleFilePaths.length - 1]
   return singleFilePath
