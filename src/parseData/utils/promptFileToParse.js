@@ -53,4 +53,4 @@ async function getFile(defaultFilePaths) {
   return singleFilePath
 }
 
-exports.promptFileToParse = promptFileToParse
+exports.promptFileToParse = getFile
