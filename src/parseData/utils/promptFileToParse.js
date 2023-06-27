@@ -48,9 +48,9 @@ async function validateFilePath(filePath) {
 }
 
 async function getFile(defaultFilePaths) {
-  const defaultFilePaths = await getDefaultFilePaths()
-  const { filePath } = await defaultFilePaths[defaultFilePaths.length - 1]
-  return filePath
+  const singleFilePaths = await getDefaultFilePaths()
+  const { singleFilePath } = await singleFilePaths[singleFilePaths.length - 1]
+  return singleFilePath
 }
 
 exports.promptFileToParse = promptFileToParse
